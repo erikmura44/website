@@ -6,6 +6,3 @@ $("input[type=text], input[type=email], #msg").on("click", function (event) {
 $("button[type=submit]").hover(function (event) {
     $("form").css("background-color", "white");
 });
-$("button[type=submit]").on("click", function (event) {
-    $("form").css("background-color", "#83F52C");
-});

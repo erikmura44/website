@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Erik Mura</title>
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="images/logo.png"> <!--- logo in tab --->
+  </head>
+
+  <header class="landing">
+        <div class="landing_info">
+            <h1><a href="about.html"><img src="images/logo.png" onmouseover="this.src='images/logo_bw.png'" onmouseout="this.src='images/logo.png'" /></a></h1>
+            <h2>Erik Mura</h2>
+            <h4>husband . brother . developer</h4>
+            <h5>[    Enter    ]</h5>
+        </div>
+  </header>
+
+<body id="enter" onclick="location.href='about.html';" style="cursor:pointer;">
+    <script>
+    	jQuery('body').css('display','none');
+    	jQuery(document).ready(function() {
+    		jQuery('body').fadeIn();
+    		jQuery('a').on('click',function(event){
+    			var thetarget = this.getAttribute('target')
+    			if (thetarget != "_blank"){
+    				var thehref = this.getAttribute('href')
+    				event.preventDefault();
+    				jQuery('body').fadeOut(function(){
+    					window.location = thehref
+    				});
+    			}
+    		});
+    	});
+    	setTimeout(function(){
+    		jQuery('body').fadeIn();
+    	},4000)
+ </script>
+</body>
+</html>

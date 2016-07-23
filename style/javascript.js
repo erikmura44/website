@@ -1,8 +1,20 @@
 
-$("input[type=text], input[type=email], #msg").on("click", function (event) {
-    var color = $(this).val();
-    $("form").css("background-color", "#beddf3");
-});
-$("button[type=submit]").hover(function (event) {
-    $("form").css("background-color", "white");
+$("input").blur(function (event) {
+    if($(this).val() === ""){
+        $(this).css('border','1px solid red');
+        $("#output").text('Forgot to add text?');
+    }
+}); /*if no text is added, border red*/
+
+// 
+// $(document).ready(function(){
+//     $('.name').focus();
+// }); /*auto focus on name input*/
+
+$(document).ready(function () {
+    $('.email, .message').hide();
+    $('.name').click(function () {
+        $('.email').fadeIn(500);
+        $('.message').fadeIn(500);
+    });
 });

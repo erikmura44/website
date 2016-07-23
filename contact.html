@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="style/main.css" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
         <link rel="icon" href="images/logo.png"> <!--- logo in tab --->
         <title>Erik Mura</title>
     </head>
@@ -56,24 +56,25 @@
         </div>
 
 
-    <form action="" method="">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="user_name" placeholder="Name" required/>
-    </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="user_mail" placeholder="E-mail" required/>
-    </div>
-    <div>
-        <label for="msg">Text: </label>
-        <textarea id="msg" name="user_message" placeholder="Leave me a nice message!" required></textarea>
-    </div>
+        <div class="output">
+        <span id="output"></span>
+        </div>
+        <form>
 
-    <div class="button">
-        <button type="submit">Send your message</button>
-    </div>
-    </form>
+        <label for="name" class="name">Name</label>
+        <input name="name" placeholder="John Doe" class="name" required>
+
+        <label for="email" class="email">Email</label>
+        <input name="email" type="email" placeholder="john@doe.io" class="email" required>
+
+
+        <label for="hidden" class="message">Message</label>
+        <textarea name="hidden" placeholder="Leave your message" class="message" required></textarea>
+
+        <input id="submit" name="submit" type="submit" value="Submit">
+
+        </form>
+
 
 
 
@@ -89,6 +90,7 @@
          </footer>
       </div><!--- end of content area --->
 
-<script src="style/javascript.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="style/javascript.js"></script>
       </body>
   </html>

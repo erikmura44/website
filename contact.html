@@ -10,36 +10,39 @@
         <title>Erik Mura</title>
     </head>
  <body>
-     <script>
-             jQuery('body').css('display','none');
-             jQuery(document).ready(function() {
-                 jQuery('body').fadeIn();
-                 jQuery('a').on('click',function(event){
-                     var thetarget = this.getAttribute('target')
-                     if (thetarget != "_blank"){
-                         var thehref = this.getAttribute('href')
-                         event.preventDefault();
-                         jQuery('body').fadeOut(function(){
-                             window.location = thehref
-                         });
-                     }
+<script>
+     jQuery('body').css('display','none');
+     jQuery(document).ready(function() {
+         jQuery('body').fadeIn();
+         jQuery('a').on('click',function(event){
+             var thetarget = this.getAttribute('target')
+             if (thetarget != "_blank"){
+             var thehref = this.getAttribute('href')
+             event.preventDefault();
+         jQuery('body').fadeOut(function(){
+             window.location = thehref
                  });
-             });
-             setTimeout(function(){
-                 jQuery('body').fadeIn();
-             },1000)
-     </script>
-     <div class="header-content">
-         <div class="header">
-             <a href="about.html"><img src="images/logo_small.png" onmouseover="this.src='images/logo_bw_small.png'" onmouseout="this.src='images/logo_small.png'"/>
-            <div id="nav">
+             }
+         });
+     });
+     setTimeout(function(){
+         jQuery('body').fadeIn();
+     },1000)
+</script>
+
+
+<div class="header-content">
+    <div class="header">
+            <a href="about.html"><img src="images/logo_small.png" onmouseover="this.src='images/logo_bw_small.png'" onmouseout="this.src='images/logo_small.png'"/>
+        <div id="nav">
             <ul>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="portfolio.html">Projects</a></li>
                 <li><a href="contact.html" id="selected">Contact</a></li>
             </ul>
         </div>
-            <div id="social">
+
+        <div id="social">
             <ul>
                 <li><a href="https://github.com/erikmura44/" alt="github" target="_blank"><img src="images/social-github.svg" alt="github" /></a></li>
                 <li><a href="https://www.facebook.com/erikmura" alt="facebook" target="_blank"><img src="images/social-facebook.svg" alt="facebook"/></a></li>
@@ -47,50 +50,47 @@
                 <li><a href="https://www.linkedin.com/in/erik-mura-144b5a1a" alt="linkedin" target="_blank"><img src="images/social-linkedin.svg" alt="linkedin"/></a></li>
             </ul>
         </div>
-        </div>
-  </div>
-     <div class="content"> <!---start of content area--->
-         <div id="about-p-0">
-         <h1>Contact Me</h1>
-         <h3>details_</h3>
-        </div>
+    </div>
+  </div><!---end of header--->
 
 
-        <div class="output">
+
+<div class="content"> <!---start of content area--->
+    <div id="about-p-0">
+        <h1>Contact Me</h1>
+        <h3>details_</h3>
+    </div>
+
+    <div class="output">
         <span id="output"></span>
-        </div>
-        <form>
+    </div>
 
+    <form>
         <label for="name" class="name">Name</label>
         <input name="name" placeholder="John Doe" class="name" required>
-
         <label for="email" class="email">Email</label>
         <input name="email" type="email" placeholder="john@doe.io" class="email" required>
-
-
         <label for="hidden" class="message">Message</label>
         <textarea name="hidden" placeholder="Leave your message" class="message" required></textarea>
-
         <input id="submit" name="submit" type="submit" value="Submit">
-
-        </form>
-
+    </form>
 
 
 
+<footer>
+    <div class="nav-bottom">
+        <div class="copyright">&copy 2016 E Mura LLC</div>
+        <div id="signature"><h4>Erik Mura</h4></div>
+    </div>
+</footer>
+
+
+</div><!--- end of content area --->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="style/javascript.js"></script>
 
 
 
-
-         <footer>
-             <div class="nav-bottom">
-                   <div class="copyright">&copy 2016 E Mura LLC</div>
-             <div id="signature"><h4>Erik Mura</h4></div>
-             </div>
-         </footer>
-      </div><!--- end of content area --->
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="style/javascript.js"></script>
-      </body>
-  </html>
+</body>
+</html>

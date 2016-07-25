@@ -12,6 +12,7 @@ $(document).ready(function () {
         $('.email').fadeIn(500);
     });
 });
+
 $(document).ready(function () {
     $('.message').hide();
     $('.email').click(function () {

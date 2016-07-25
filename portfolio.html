@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style/main.css" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <link rel="icon" href="images/logo.png"> <!--- logo in tab --->
-        <title>Erik Mura</title>
-    </head>
- <body>
-     <script>
-             jQuery('body').css('display','none');
-             jQuery(document).ready(function() {
-                 jQuery('body').fadeIn();
-                 jQuery('a').on('click',function(event){
-                     var thetarget = this.getAttribute('target')
-                     if (thetarget != "_blank"){
-                         var thehref = this.getAttribute('href')
-                         event.preventDefault();
-                         jQuery('body').fadeOut(function(){
-                             window.location = thehref
-                         });
-                     }
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link rel="icon" href="images/logo.png"> <!--- logo in tab --->
+    <title>Erik Mura</title>
+</head>
+<body>
+<script>
+     jQuery('body').css('display','none');
+     jQuery(document).ready(function() {
+         jQuery('body').fadeIn();
+         jQuery('a').on('click',function(event){
+             var thetarget = this.getAttribute('target')
+             if (thetarget != "_blank"){
+                 var thehref = this.getAttribute('href')
+                 event.preventDefault();
+                 jQuery('body').fadeOut(function(){
+                     window.location = thehref
                  });
-             });
-             setTimeout(function(){
-                 jQuery('body').fadeIn();
-             },1000)
-     </script>
-     <div class="header-content">
-         <div class="header">
-             <a href="about.html"><img src="images/logo_small.png" onmouseover="this.src='images/logo_bw_small.png'" onmouseout="this.src='images/logo_small.png'"/>
-            <div id="nav">
+             }
+         });
+     });
+        setTimeout(function(){
+         jQuery('body').fadeIn();
+     },1000)
+</script>
+
+
+<div class="header-content">
+    <div class="header">
+            <a href="about.html"><img src="images/logo_small.png" onmouseover="this.src='images/logo_bw_small.png'" onmouseout="this.src='images/logo_small.png'"/>
+        <div id="nav">
             <ul>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="portfolio.html" id="selected">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-            <div id="social">
+
+        <div id="social">
             <ul>
                 <li><a href="https://github.com/erikmura44/" alt="github" target="_blank"><img src="images/social-github.svg" alt="github" /></a></li>
                 <li><a href="https://www.facebook.com/erikmura" alt="facebook" target="_blank"><img src="images/social-facebook.svg" alt="facebook"/></a></li>
@@ -47,39 +49,51 @@
                 <li><a href="https://www.linkedin.com/in/erik-mura-144b5a1a" alt="linkedin" target="_blank"><img src="images/social-linkedin.svg" alt="linkedin"/></a></li>
             </ul>
         </div>
-        </div>
-  </div>
-     <div class="content"> <!---start of content area--->
-         <div id="about-p-0">
+    </div>
+</div><!--- end of header content --->
+
+
+<div class="content"> <!---start of content area--->
+    <div id="about-p-0">
          <h1>Me</h1>
          <h3>I am_</h3>
-         </div>
+    </div>
 
-         <div class="group">
-             <div class="left">
-                 <img src="images/project-one.png" alt="project one" /><!--- 514x342 image size --->
-                 <p id="portfolio-captions">Lorem Ipsum</p>
-             </div>
-             <div class="right">
-                <img src="images/project-two.jpg" alt="project two" />
-                <p id="portfolio-captions">Lorem Ipsum</p>
-            </div>
-            <div class="left">
-                <img src="images/project-three.jpg" alt="project three" />
-                <p id="portfolio-captions">Lorem Ipsum</p>
-            </div>
-            <div class="right">
-               <img src="images/project-four.jpg" alt="project four" />
-               <p id="portfolio-captions">Lorem Ipsum</p>
-           </div>
+    <div class="group">
+        <div class="left">
+            <img src="images/project-one.png" alt="project one" /><!--- 514x342 image size --->
+            <p id="portfolio-captions">Lorem Ipsum</p>
         </div>
-       <footer>
-           <div class="nav-bottom">
-                 <div class="copyright">&copy 2016 E Mura LLC</div>
-           <div id="signature"><h4>Erik Mura</h4></div>
-           </div>
-       </footer>
-    </div><!--- end of content area --->
+        <div class="right">
+            <img src="images/project-two.jpg" alt="project two" />
+            <p id="portfolio-captions">Lorem Ipsum</p>
+        </div>
+        <div class="left">
+            <img src="images/project-three.jpg" alt="project three" />
+            <p id="portfolio-captions">Lorem Ipsum</p>
+        </div>
+        <div class="right">
+           <img src="images/project-four.jpg" alt="project four" />
+           <p id="portfolio-captions">Lorem Ipsum</p>
+       </div>
+   </div>
 
-    </body>
+
+
+<footer>
+    <div class="nav-bottom">
+        <div class="copyright">&copy 2016 E Mura LLC</div>
+        <div id="signature"><h4>Erik Mura</h4></div>
+    </div>
+</footer>
+
+
+
+</div><!--- end of content area --->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="style/javascript.js"></script>
+
+</body>
 </html>

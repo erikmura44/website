@@ -5,14 +5,12 @@
         <link rel="stylesheet" href="style/main.css" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <link rel="icon" href="images/logo.png"> <!--- logo in tab --->
         <title>Erik Mura</title>
     </head>
- <body>
+<body>
 <script>
 jQuery('body').css('display','none');
-
 jQuery(document).ready(function() {
     jQuery('body').fadeIn();
     jQuery('a').on('click',function(event){
@@ -20,69 +18,77 @@ jQuery(document).ready(function() {
         if (thetarget != "_blank"){
         var thehref = this.getAttribute('href')
         event.preventDefault();
-
     jQuery('body').fadeOut(function(){
         window.location = thehref
             });
         }
     });
 });
-
 setTimeout(function(){
     jQuery('body').fadeIn();
 },1000)
 </script>
-     <div class="header-content">
-         <div class="header">
-             <a href="about.html"><img src="images/logo_small.png" onmouseover="this.src='images/logo_bw_small.png'" onmouseout="this.src='images/logo_small.png'"/>
-            <div id="nav">
-                <ul>
-                    <li><a href="about.html" id="selected">About Me</a></li>
-                    <li><a href="portfolio.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div id="social">
-                <ul>
-                    <li><a href="https://github.com/erikmura44/" alt="github" target="_blank"><img src="images/social-github.svg" alt="github" /></a></li>
-                    <li><a href="https://www.facebook.com/erikmura" alt="facebook" target="_blank"><img src="images/social-facebook.svg" alt="facebook"/></a></li>
-                    <li><a href="https://twitter.com/Erik_Mura" alt="twitter" target="_blank"><img src="images/social-twitter.svg" alt="twitter"/></a></li>
-                    <li><a href="https://www.linkedin.com/in/erik-mura-144b5a1a" alt="linkedin" target="_blank"><img src="images/social-linkedin.svg" alt="linkedin"/></a></li>
-                </ul>
-            </div>
+
+<div class="header-content">
+    <div class="header">
+            <a href="about.html"><img src="images/logo_small.png" onmouseover="this.src='images/logo_bw_small.png'" onmouseout="this.src='images/logo_small.png'"/>
+        <div id="nav">
+            <ul>
+                <li><a href="about.html" id="selected">About Me</a></li>
+                <li><a href="portfolio.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="social">
+            <ul>
+                <li><a href="https://github.com/erikmura44/" alt="github" target="_blank"><img src="images/social-github.svg" alt="github" /></a></li>
+                <li><a href="https://www.facebook.com/erikmura" alt="facebook" target="_blank"><img src="images/social-facebook.svg" alt="facebook"/></a></li>
+                <li><a href="https://twitter.com/Erik_Mura" alt="twitter" target="_blank"><img src="images/social-twitter.svg" alt="twitter"/></a></li>
+                <li><a href="https://www.linkedin.com/in/erik-mura-144b5a1a" alt="linkedin" target="_blank"><img src="images/social-linkedin.svg" alt="linkedin"/></a></li>
+            </ul>
         </div>
     </div>
-     <div class="content"><!---start with content--->
-         <div id="about-p-0">
-             <h1>Me</h1>
+</div><!---end of header--->
 
-             <h3>I am_</h3>
-
-           <div id="about-p-1">
-               <h3>Colorado local. California native_</h3>
+<div class="content"><!---start with content--->
+    <div id="about-p-0">
+        <h1>Me</h1>
+        <h3>I am_</h3>
+    <div id="about-p-1">
+        <h3>Colorado local. California native_</h3>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum faucibus augue nec consequat. Sed nec tortor sit amet justo malesuada malesuada porta id tortor. Phasellus in bibendum felis, nec varius augue. Aliquam erat volutpat. Suspendisse ullamcorper sagittis ex in aliquam. Sed turpis est, vulputate ut nunc quis, consequat pellentesque massa. Etiam ultricies enim eget sapien fermentum vehicula. Praesent a consectetur mauris. Aenean tristique mauris at lectus blandit mollis. Maecenas semper tristique tincidunt. Vivamus felis ipsum, cursus scelerisque ligula efficitur, porta blandit nunc. Sed urna enim, efficitur eget porta eget, interdum quis ipsum.</p>
-           </div>
-       </div>
-               <div id="about-p-2">
-               <h3>Full of past skills_</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum faucibus augue nec consequat. Sed nec tortor sit amet justo malesuada malesuada porta id tortor. Phasellus in bibendum felis, nec varius augue. Aliquam erat volutpat. Suspendisse ullamcorper sagittis ex in aliquam. Sed turpis est, vulputate ut nunc quis, consequat pellentesque massa. Etiam ultricies enim eget sapien fermentum vehicula. Praesent a consectetur mauris. Aenean tristique mauris at lectus blandit mollis. Maecenas semper tristique tincidunt. Vivamus felis ipsum, cursus scelerisque ligula efficitur, porta blandit nunc. Sed urna enim, efficitur eget porta eget, interdum quis ipsum.</p>
-               </div>
-           <div id="about-p-3">
-               <h3>From_</h3>
-               <p>Aliquam pellentesque efficitur pretium. Nam sodales quam metus, non vestibulum metus tincidunt vitae. Ut vehicula cursus odio, sollicitudin lacinia massa tristique ac. Aenean blandit libero eu ultricies elementum. Ut lacinia, nulla eu mattis mollis, tortor mauris mollis eros, quis sodales massa dolor at ligula. Morbi venenatis nulla quis dui tristique, in mattis turpis efficitur. Ut id malesuada magna, vitae interdum ex. Vivamus laoreet imperdiet purus, in elementum nulla. Maecenas tempus tellus enim, sit amet aliquet turpis eleifend vitae. Praesent non tempor neque. Morbi porta viverra enim sit amet condimentum. Aliquam felis odio, porta a est a, commodo elementum lorem. Morbi diam nisi, facilisis ac rhoncus aliquet, sollicitudin et erat. Aliquam gravida nisi arcu, sed laoreet nisi gravida ornare. Sed ac pellentesque augue.</p>
-           </div>
-       <div id="about-photo">
-       <img src="images/me.jpg" alt="me">
-       </div>
+    </div>
+    </div>
 
-       <footer>
-           <div class="nav-bottom">
-                 <div class="copyright">&copy 2016 E Mura LLC</div>
-           <div id="signature"><h4>Erik Mura</h4></div>
-           </div>
-       </footer>
+    <div id="about-p-2">
+        <h3>Full of past skills_</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum faucibus augue nec consequat. Sed nec tortor sit amet justo malesuada malesuada porta id tortor. Phasellus in bibendum felis, nec varius augue. Aliquam erat volutpat. Suspendisse ullamcorper sagittis ex in aliquam. Sed turpis est, vulputate ut nunc quis, consequat pellentesque massa. Etiam ultricies enim eget sapien fermentum vehicula. Praesent a consectetur mauris. Aenean tristique mauris at lectus blandit mollis. Maecenas semper tristique tincidunt. Vivamus felis ipsum, cursus scelerisque ligula efficitur, porta blandit nunc. Sed urna enim, efficitur eget porta eget, interdum quis ipsum.</p>
+    </div>
+
+    <div id="about-p-3">
+        <h3>From_</h3>
+            <p>Aliquam pellentesque efficitur pretium. Nam sodales quam metus, non vestibulum metus tincidunt vitae. Ut vehicula cursus odio, sollicitudin lacinia massa tristique ac. Aenean blandit libero eu ultricies elementum. Ut lacinia, nulla eu mattis mollis, tortor mauris mollis eros, quis sodales massa dolor at ligula. Morbi venenatis nulla quis dui tristique, in mattis turpis efficitur. Ut id malesuada magna, vitae interdum ex. Vivamus laoreet imperdiet purus, in elementum nulla. Maecenas tempus tellus enim, sit amet aliquet turpis eleifend vitae. Praesent non tempor neque. Morbi porta viverra enim sit amet condimentum. Aliquam felis odio, porta a est a, commodo elementum lorem. Morbi diam nisi, facilisis ac rhoncus aliquet, sollicitudin et erat. Aliquam gravida nisi arcu, sed laoreet nisi gravida ornare. Sed ac pellentesque augue.</p>
+    </div>
+
+
+    <div id="about-photo">
+       <img src="images/me.jpg" alt="me">
+    </div>
+
+
+<footer>
+    <div class="nav-bottom">
+        <div class="copyright">&copy 2016 E Mura LLC</div>
+        <div id="signature"><h4>Erik Mura</h4></div>
+    </div>
+</footer>
+
+
 </div><!--- end of content --->
 
 
-    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="style/javascript.js"></script>
+
+</body>
 </html>

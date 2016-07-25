@@ -11,11 +11,11 @@ $(document).ready(function () {
     $('.name').click(function () {
         $('.email').fadeIn(500);
     });
-});
+}); /*hides email field on contact */
 
 $(document).ready(function () {
     $('.message').hide();
     $('.email').click(function () {
         $('.message').fadeIn(500);
     });
-});
+});/*hides message field on contact */

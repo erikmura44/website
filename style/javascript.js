@@ -6,15 +6,15 @@ $("input").blur(function (event) {
     }
 }); /*if no text is added, border red*/
 
-// 
-// $(document).ready(function(){
-//     $('.name').focus();
-// }); /*auto focus on name input*/
-
 $(document).ready(function () {
-    $('.email, .message').hide();
+    $('.email').hide();
     $('.name').click(function () {
         $('.email').fadeIn(500);
+    });
+});
+$(document).ready(function () {
+    $('.message').hide();
+    $('.email').click(function () {
         $('.message').fadeIn(500);
     });
 });

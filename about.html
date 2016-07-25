@@ -10,45 +10,48 @@
         <title>Erik Mura</title>
     </head>
  <body>
-     <script>
-             jQuery('body').css('display','none');
-             jQuery(document).ready(function() {
-                 jQuery('body').fadeIn();
-                 jQuery('a').on('click',function(event){
-                     var thetarget = this.getAttribute('target')
-                     if (thetarget != "_blank"){
-                         var thehref = this.getAttribute('href')
-                         event.preventDefault();
-                         jQuery('body').fadeOut(function(){
-                             window.location = thehref
-                         });
-                     }
-                 });
-             });
-             setTimeout(function(){
-                 jQuery('body').fadeIn();
-             },1000)
-     </script>
+<script>
+jQuery('body').css('display','none');
+
+jQuery(document).ready(function() {
+    jQuery('body').fadeIn();
+    jQuery('a').on('click',function(event){
+        var thetarget = this.getAttribute('target')
+        if (thetarget != "_blank"){
+        var thehref = this.getAttribute('href')
+        event.preventDefault();
+
+    jQuery('body').fadeOut(function(){
+        window.location = thehref
+            });
+        }
+    });
+});
+
+setTimeout(function(){
+    jQuery('body').fadeIn();
+},1000)
+</script>
      <div class="header-content">
          <div class="header">
              <a href="about.html"><img src="images/logo_small.png" onmouseover="this.src='images/logo_bw_small.png'" onmouseout="this.src='images/logo_small.png'"/>
             <div id="nav">
-            <ul>
-                <li><a href="about.html" id="selected">About Me</a></li>
-                <li><a href="portfolio.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li><a href="about.html" id="selected">About Me</a></li>
+                    <li><a href="portfolio.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
             <div id="social">
-            <ul>
-                <li><a href="https://github.com/erikmura44/" alt="github" target="_blank"><img src="images/social-github.svg" alt="github" /></a></li>
-                <li><a href="https://www.facebook.com/erikmura" alt="facebook" target="_blank"><img src="images/social-facebook.svg" alt="facebook"/></a></li>
-                <li><a href="https://twitter.com/Erik_Mura" alt="twitter" target="_blank"><img src="images/social-twitter.svg" alt="twitter"/></a></li>
-                <li><a href="https://www.linkedin.com/in/erik-mura-144b5a1a" alt="linkedin" target="_blank"><img src="images/social-linkedin.svg" alt="linkedin"/></a></li>
-            </ul>
+                <ul>
+                    <li><a href="https://github.com/erikmura44/" alt="github" target="_blank"><img src="images/social-github.svg" alt="github" /></a></li>
+                    <li><a href="https://www.facebook.com/erikmura" alt="facebook" target="_blank"><img src="images/social-facebook.svg" alt="facebook"/></a></li>
+                    <li><a href="https://twitter.com/Erik_Mura" alt="twitter" target="_blank"><img src="images/social-twitter.svg" alt="twitter"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/erik-mura-144b5a1a" alt="linkedin" target="_blank"><img src="images/social-linkedin.svg" alt="linkedin"/></a></li>
+                </ul>
+            </div>
         </div>
-        </div>
-  </div>
+    </div>
      <div class="content"><!---start with content--->
          <div id="about-p-0">
              <h1>Me</h1>
